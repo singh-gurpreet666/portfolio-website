@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurpreet Singh - student , developer , coder/about_me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0 0;
+            padding: 0 0;
+        }
+        .container{
+            display: flex;
+        }
+        .navbar{
+            width: 200px;
+            height: 100vh;
+            background-color: rgb(162, 172, 169);
+        }
+        .navbargo{
+            transform: translate(-400px);
+            position:absolute;
+        }
+        body{
+            background-image: url("home.jpeg");
+            background-size: cover;
+        }
+        ul li a:hover{
+            color: blanchedalmond;
+            text-decoration: underline;
+        }
+       
+        ul li a{
+            margin-left: 50px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        .navbar ul li {
+            list-style: none;
+            margin: 10vh 0;
+            
+        }
+        .hamb{
+            position: absolute;
+            display: flex;
+        }
+        .about{
+            margin-left: 100px;
+        }
+        .ham{
+            height: 25px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .cross {
+            height: 25px;
+            margin-top: 10px;
+            margin-left: 140px;
+        }
+        #myself{font-size: 2em;
+            border: 1px solid black;
+            color: white;
+            padding: 10px;
+            border-radius: 30px;
+            margin: 10px;
+            text-shadow: blanchedalmond;
+            text-align: match-parent;
+            background-color: rgb(117, 117, 238);
+        }
+        h2{
+            text-align: center;
+            font-family: 'Cairo', sans-serif;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="hamb">
+            <img class="ham" src="ham.jpeg" alt="Open">
+        
+            <img class="cross" src="cross.jpeg" alt="Close">
+        
+    </div>
+    <div class="container">
+        <nav class="navbar navbargo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">My_Intro</a></li>
+                <li><a href="qualification.html">Qualifications</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    <div class="about">
+    <h2>About Me</h2>
+    <div id="myself">
+        <p id="hi">Hi</p>
+       <p id="name">I am gurpreet singh</p>
+        I am doing my B.Tech. from National Institute Of Tecnology , Warangal (Telangana state) with computer science and engineering. I am going to complete my graduation in 2024. I completed my 12th in Non-medical(CBSE) with 92.2% marks from J.N.V. rangareddy (Telangana).I am a Ex-Dakshana scholar as well.
+        <p>
+            I am in third Year of B.Tech.I am good in Programming mostly , i write codes in c++ Programming.I have a good knowledge of Data-structures and STL in c++.
+            I am also good in Java Programing Language.
+            In second Year of B.Tech I completed Database management system and made a project on Institute database management System in which our team made a ER Diagram and implemented the same using sql.
+
+
+        </p>
+        <p>
+            I am also completed fronted Developer course using HTML,CSS and Javascript.
+            I also created my personal website using HTML , CSS and Javascript .
+        </p>
+        <h4>Thanks for visiting This Site</h4>
+    </div>
+</div>
+</div>
+
+
+<script>
+    document.querySelector('.cross').style.display='none';
+    document.querySelector('.hamb').addEventListener("click",()=>{
+        document.querySelector('.navbar').classList.toggle('navbargo');
+        if(document.querySelector('.navbar').classList.contains('navbargo')){
+            document.querySelector('.ham').style.display='inline'
+            document.querySelector('.cross').style.display='none'
+        }
+        else{
+            document.querySelector('.cross').style.display='inline'
+            document.querySelector('.ham').style.display='none'
+        
+        }
+    })
+</script>
+</body>
+
+</html>

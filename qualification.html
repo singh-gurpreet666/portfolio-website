@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurpreet Singh - student , developer , coder/qualifications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0 0;
+            padding: 0 0;
+        }
+        body{
+            height: 100vh;
+            background-image: url("qualification.jpeg");
+            background-size: cover;
+            background-repeat: repeat;
+            
+        }
+        .container{
+            display: flex;
+        }
+        .navbar{
+            width: 200px;
+            height: 100vh;
+            background-color: rgb(162, 172, 169);
+        }
+        .navbargo{
+            transform: translate(-400px);
+            position:absolute;
+        }
+        
+        ul li a:hover{
+            color: blanchedalmond;
+            text-decoration: underline;
+        }
+       
+        ul li a{
+            margin-left: 50px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        .navbar ul li {
+            list-style: none;
+            margin: 10vh 0;
+            
+        }
+        .hamb{
+            position: absolute;
+            display: flex;
+        }
+        .Qualification{
+            margin-left: 100px;
+            
+        }
+        .ham{
+            height: 25px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .cross {
+            height: 25px;
+            margin-top: 10px;
+            margin-left: 140px;
+        }
+        .quali{
+            display: flex;
+            color: rgb(15, 1, 1);
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Cairo', sans-serif;
+        }
+       .quali div{
+        width: 200px;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding: 50px 50px;
+        background-color: orange;
+        flex-wrap: wrap;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="hamb">
+            <img class="ham" src="ham.jpeg" alt="Open">
+        
+            <img class="cross" src="cross.jpeg" alt="Close">
+        
+    </div>
+    <div class="container">
+        <nav class="navbar navbargo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">My_Intro</a></li>
+                <li><a href="qualification.html">Qualifications</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    <div class="Qualification">
+    <h2>Qualifications </h2>
+    <div class="quali">
+        <div class="current">
+            I am doing my B.Tech in Computer Science and engineering form National Institute of Technology Warangal.
+            I joined NIT Warangal in the December of 2020 as a Student and hopefully complete my Graduation in the Mid 2024.
+        </div>
+        <div class="hse">
+            I completed my Higher Secondary Education from Jawahar Navaodaya Vidyalaya Rangareddy (Telangana) with CBSE board
+            in year 2020 with 92.2% of marks.
+        </div>
+        <div class="sse">
+            I completed my Secondary Education from Jawahar Navaodaya Vidyalaya Kurukshetra (Haryana) with CBSE board
+            in year 2018 with 86% of marks.
+            In 2018 I am selected as Dakshana scholar and went to Jawahar Navaodaya Vidyalaya Rangareddy (Telangana) for Higher Education and JEE coaching.
+        </div>
+    </div>
+        
+</div>
+</div>
+
+
+<script>
+    document.querySelector('.cross').style.display='none';
+    document.querySelector('.hamb').addEventListener("click",()=>{
+        document.querySelector('.navbar').classList.toggle('navbargo');
+        if(document.querySelector('.navbar').classList.contains('navbargo')){
+            document.querySelector('.ham').style.display='inline'
+            document.querySelector('.cross').style.display='none'
+        }
+        else{
+            document.querySelector('.cross').style.display='inline'
+            document.querySelector('.ham').style.display='none'
+        
+        }
+    })
+</script>
+</body>
+
+</html>
